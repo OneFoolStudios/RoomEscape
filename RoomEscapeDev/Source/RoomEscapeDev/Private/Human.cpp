@@ -2,6 +2,7 @@
 
 #include "RoomEscapeDev.h"
 #include "HumanMovementComponent.h"
+#include "HumanFoot.h"
 #include "Human.h"
 
 
@@ -37,12 +38,12 @@ void AHuman::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 
 
-void AHuman::SetHumanBodyReference(UHumanBody* HumanBodyToSet) 
+void AHuman::SetHumanFootReference(UHumanFoot* HumanFootToSet)
 {
-	if (!HumanBodyToSet) 
+	if (!HumanFootToSet) 
 	{ 
-		UE_LOG(LogTemp, Warning, TEXT("No Body Found"));
+		UE_LOG(LogTemp, Warning, TEXT("No Foot Found"));
 		return;
 	}
-	HumanMovementComponent->SetBodyReference(HumanBodyToSet);
+	HumanMovementComponent->SetFootReference(HumanFootToSet);
 }

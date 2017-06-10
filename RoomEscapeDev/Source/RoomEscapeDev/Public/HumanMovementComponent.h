@@ -6,6 +6,7 @@
 #include "HumanMovementComponent.generated.h"
 
 class UHumanBody;
+class UHumanFoot;
 /**
  * 
  */
@@ -18,14 +19,13 @@ public:
 	//Functions
 	UFUNCTION(BlueprintCallable, Category = "Input") void IntendMoveForward(float Acc);
 	
-	void SetBodyReference(UHumanBody* HumanBodyToSet);
+	void SetFootReference(UHumanFoot* HumanFootToSet);
 
 
 
 
 	//Vars
-	UPROPERTY(EditDefaultsOnly) float MaxAcc = 100; // 100kg at 10m/s²
-	UHumanBody* Body = nullptr;
+	UHumanFoot* Foot = nullptr;
 
 
 private:

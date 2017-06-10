@@ -1,18 +1,18 @@
 // OneFoolStudios
 
 #include "RoomEscapeDev.h"
-#include "HumanBody.h"
+#include "HumanFoot.h"
 #include "HumanMovementComponent.h"
 
-void UHumanMovementComponent::SetBodyReference(UHumanBody* HumanBodyToSet) 
+void UHumanMovementComponent::SetFootReference(UHumanFoot* HumanFootToSet)
 {
-	if (!HumanBodyToSet) 
+	if (!HumanFootToSet) 
 	{
 		UE_LOG(LogTemp, Warning, TEXT("No Body2 Found"));
 		return; 
 	}
-	UE_LOG(LogTemp, Warning, TEXT("Body found at: %s"), *HumanBodyToSet->GetOwner()->GetActorLocation().ToString());
-	//Body = HumanBodyToSet;
+	UE_LOG(LogTemp, Warning, TEXT("Body found at: %s"), *HumanFootToSet->GetOwner()->GetActorLocation().ToString());
+	//Foot = HumanFootToSet;
 	
 }
 
@@ -21,8 +21,9 @@ void UHumanMovementComponent::SetBodyReference(UHumanBody* HumanBodyToSet)
 
 void UHumanMovementComponent::IntendMoveForward(float Acc) 
 {
-	if (!Body) { return; }
-	//Body->SetAcceleration(Acc);
+	//if (!Foot) { return; }
+	//UE_LOG(LogTemp, Warning, TEXT("moving"));
+	//Foot->SetAcceleration(Acc);
 
 }
 

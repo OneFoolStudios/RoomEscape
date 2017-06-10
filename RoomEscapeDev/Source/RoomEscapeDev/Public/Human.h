@@ -8,7 +8,7 @@
 
 // Foward declarations
 class UHumanMovementComponent;
-class UHumanBody;
+class UHumanFoot;
 
 
 UCLASS()
@@ -36,7 +36,7 @@ public:
 
 
 	//fucntions
-	UFUNCTION(BlueprintCallable, Category = Setup) void SetHumanBodyReference(UHumanBody* HumanBodyToSet);
+	UFUNCTION(BlueprintCallable, Category = Setup) void SetHumanFootReference(UHumanFoot* HumanFootToSet);
 
 
 	
