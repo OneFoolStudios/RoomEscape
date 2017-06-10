@@ -25,12 +25,11 @@ public:
 
 	//Vars
 	UPROPERTY(EditDefaultsOnly) float MaxAcc = 100; // 100kg at 10m/s²
+	UHumanBody* Body = nullptr;
+
 
 private:
 
 
-	//Vars
-	UHumanBody* HumanBody = nullptr;
-	
 	
 };

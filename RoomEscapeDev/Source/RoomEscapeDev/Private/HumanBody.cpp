@@ -10,4 +10,5 @@ void UHumanBody::SetAcceleration(float Acc)
 	auto ForceLocation = GetComponentLocation();
 	auto HumanRoot = Cast<UPrimitiveComponent>(GetOwner()->GetRootComponent());
 	HumanRoot->AddForceAtLocation(ForceApplied, ForceLocation);
+	
 }

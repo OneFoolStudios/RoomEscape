@@ -6,8 +6,14 @@
 
 void UHumanMovementComponent::SetBodyReference(UHumanBody* HumanBodyToSet) 
 {
-	if (!HumanBodyToSet) { return; }
-	HumanBody = HumanBodyToSet;
+	if (!HumanBodyToSet) 
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No Body2 Found"));
+		return; 
+	}
+	UE_LOG(LogTemp, Warning, TEXT("Body found at: %s"), *HumanBodyToSet->GetOwner()->GetActorLocation().ToString());
+	//Body = HumanBodyToSet;
+	
 }
 
 
@@ -15,8 +21,8 @@ void UHumanMovementComponent::SetBodyReference(UHumanBody* HumanBodyToSet)
 
 void UHumanMovementComponent::IntendMoveForward(float Acc) 
 {
-	if (!HumanBody) { return; }
-	HumanBody->SetAcceleration(Acc);
+	if (!Body) { return; }
+	//Body->SetAcceleration(Acc);
 
 }
 
