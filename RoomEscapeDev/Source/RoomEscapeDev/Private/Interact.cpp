@@ -36,6 +36,7 @@ void UInteract::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 }
 
 UPrimitiveComponent* UInteract::GetHitObject(FString& RootName) {
+	RootName = "Nope";
 	/// setup query parameters
 	FCollisionQueryParams TraceParameters(FName(TEXT("")), false, GetOwner());
 	/// Ray-cast out to reach distance
