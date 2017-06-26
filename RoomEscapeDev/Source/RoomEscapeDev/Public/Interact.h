@@ -27,7 +27,7 @@ private:
 	//Reach of the player
 	float Reach = 150.0f;
 
-	UFUNCTION(BlueprintCallable, Category = Input) UPrimitiveComponent* GetHitObject(FString& RootName);
+	UFUNCTION(BlueprintCallable, Category = "Input") UPrimitiveComponent* GetHitObject(FString& RootName);
 
 	//Gets the location where the player can reach to grab something
 	FVector GetReachLineStart();

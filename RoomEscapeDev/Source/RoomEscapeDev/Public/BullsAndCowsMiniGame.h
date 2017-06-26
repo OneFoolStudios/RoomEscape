@@ -29,7 +29,7 @@ class ROOMESCAPEDEV_API UBullsAndCowsMiniGame : public UUserWidget
 
 public:	
 	//UBullsAndCowsMiniGame();
-	UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass) void WordGame(FString Guess, FString& Result, bool& EndGame);
+	UFUNCTION(BlueprintCallable, Category = "MyUUserWidgetClass") void WordGame(FString Guess, FString& Result, bool& EndGame);
 
 	int32 GetMaxTries() const;
 	int32 GetCurrentTry() const;

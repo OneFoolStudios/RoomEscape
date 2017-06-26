@@ -28,13 +28,13 @@ public:
 	//Functions
 
 	///MOVING FUNCTIONS
-	UFUNCTION(BlueprintCallable, Category = Input) void MoveForward(float ThumbStick);
-	UFUNCTION(BlueprintCallable, Category = Input) void MoveLeft(float ThumbStick);
+	UFUNCTION(BlueprintCallable, Category = "Input") void MoveForward(float ThumbStick);
+	UFUNCTION(BlueprintCallable, Category = "Input") void MoveLeft(float ThumbStick);
 	// Jumping: is just a blueprint called jump, no use to make one here
 	//Crouch
 
 	///LOOKING FUNCTIONS
-	UFUNCTION(BlueprintCallable, Category = Input) void LookUp(float ThumbStick);
-	UFUNCTION(BlueprintCallable, Category = Input) void LookLeft(float ThumbStick);
+	UFUNCTION(BlueprintCallable, Category = "Input") void LookUp(float ThumbStick);
+	UFUNCTION(BlueprintCallable, Category = "Input") void LookLeft(float ThumbStick);
 
 };
